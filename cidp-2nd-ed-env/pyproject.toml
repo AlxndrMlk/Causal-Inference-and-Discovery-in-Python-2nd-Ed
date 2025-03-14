@@ -1,0 +1,18 @@
+[project]
+dependencies = []
+name = "cidp-2nd-ed-env"
+requires-python = ">= 3.11"
+version = "0.1.0"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[tool.pixi.pypi-dependencies]
+cidp_2nd_ed_env = { path = ".", editable = true }
+
+[tool.pixi.tasks]
